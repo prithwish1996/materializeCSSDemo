@@ -1,6 +1,6 @@
 <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 <div class="container">
 	<div class="row">
 	<div class="section"></div>
@@ -16,10 +16,11 @@
   			 <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
             <div class='row'>
               <div class='input-field col s12' >
-                <input class='validate' type="text" name='username' id='email' [(ngModel)]="email" required />
+                <input type="text" name='username' id='email' [(ngModel)]="email" required="" aria-required="true">
                 <label for='email' >Email</label>
               </div>
             </div>
+            <!-- <input id="email2" type="email" class="validate" required="" aria-required="true"> -->
             <div class='row'>
               <div class='input-field col m12'>
                 <input class='validate' type='password' name='password' id='password' [(ngModel)]="password"  required />
