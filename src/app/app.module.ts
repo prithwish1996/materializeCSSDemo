@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import {AuthGuard} from './auth.guard';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { DetailsComponent } from './details/details.component';
+import { ParticlesModule } from 'angular-particle';
 
 const appRoutes: Routes = [
 	{ path: '', redirectTo: '/login', pathMatch:'full' },
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
     FlashMessagesModule.forRoot(),
      RouterModule.forRoot(
       appRoutes
-    )
+    ),
+     ParticlesModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

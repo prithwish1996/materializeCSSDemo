@@ -13,7 +13,7 @@
     
       <div class="section"><i class="mdi-alert-error red-text"></i></div>
       
-  
+  			 <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
             <div class='row'>
               <div class='input-field col s12' >
                 <input class='validate' type="text" name='username' id='email' [(ngModel)]="email" required />
@@ -45,12 +45,14 @@
         </div>
        </div>
       </div>
+
       </main>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
 	</div>
-	<
+	
 	 <ngx-spinner
   bdColor="rgba(51,51,51,0.8)"
   size="medium"
